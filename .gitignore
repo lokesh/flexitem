@@ -1,0 +1,10 @@
+*.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+.sass-cache
+
+.htaccess
+
+bower_components
+node_modules

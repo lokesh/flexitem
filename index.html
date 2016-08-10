@@ -1,0 +1,57 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>FlexItem</title>
+
+	<link rel="stylesheet" href="./css/flex.css">
+</head>
+<body>
+
+  <div class="content">
+
+    <div class="demo-and-props">
+
+      <div class="demo">
+        <div class="container js-container">
+        </div>
+      </div>
+
+      <section class="options">
+        <h1 class="heading">Container</h1>
+        <div class="props js-container-props"></div>
+      </section>
+
+      <section class="options">
+        <h1 class="heading">Items</h1>
+        <div class="props js-item-props"></div>
+
+        <button class="js-add-item">Add item</button>
+        <button class="js-remove-item">Remove item</button>
+        <button class="js-same-height">Same heights</button>
+        <button class="js-random-heights">Random heights</button>
+      </section>
+
+    </div>
+
+    <div class="code">
+<pre><code class="js-code"></code></pre>
+    </div>
+
+  </div>
+
+  <script type="text/template" id="prop-template">
+    <div class="prop" data-prop="<%- name %>">
+      <div class="name"><%- name %></div>
+      <% _.each(values, function(value) { %>
+        <button class="value" data-value="<%- value %>"><%- value %></button>
+      <% }); %>
+    </div>
+  </script>
+
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/underscore/underscore-min.js"></script>
+  <script src="js/flex.js"></script>
+
+</body>
+</html>

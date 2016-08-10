@@ -1,0 +1,338 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-weight: 300;
+  src: url("//cdn2.editmysite.com/fonts/Proxima-Light/267447_4_0.eot");
+  src: url("//cdn2.editmysite.com/fonts/Proxima-Light/267447_4_0.eot?#iefix") format("embedded-opentype"), url("//cdn2.editmysite.com/fonts/Proxima-Light/267447_4_0.woff") format("woff"), url("//cdn2.editmysite.com/fonts/Proxima-Light/267447_4_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("//cdn2.editmysite.com/components/ui-framework/fonts/proxima-nova-regular/2EF7EC_1_0.eot");
+  src: url("//cdn2.editmysite.com/components/ui-framework/fonts/proxima-nova-regular/2EF7EC_1_0eot?#iefix") format("embedded-opentype"), url("//cdn2.editmysite.com/components/ui-framework/fonts/proxima-nova-regular/2EF7EC_1_0.woff") format("woff"), url("//cdn2.editmysite.com/components/ui-framework/fonts/proxima-nova-regular/2EF7EC_1_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-weight: 500;
+  src: url("//cdn2.editmysite.com/fonts/Proxima-Semibold/267447_5_0.eot");
+  src: url("//cdn2.editmysite.com/fonts/Proxima-Semibold/267447_5_0.eot?#iefix") format("embedded-opentype"), url("//cdn2.editmysite.com/fonts/Proxima-Semibold/267447_5_0.woff") format("woff"), url("//cdn2.editmysite.com/fonts/Proxima-Semibold/267447_5_0.ttf") format("truetype"); }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  padding: 0;
+  margin: 0;
+  color: #212121;
+  background: #fafafa; }
+
+body,
+input,
+button,
+textarea,
+select {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 14px;
+  font-weight: 400; }
+
+a {
+  color: #f1c00e;
+  cursor: pointer; }
+
+p {
+  line-height: 1.4em; }
+
+.input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #bdbdbd;
+  background-color: white;
+  outline: none;
+  -webkit-appearance: none; }
+  .input:hover {
+    background-color: #fafafa; }
+  .input:focus {
+    border-color: #f1c00e; }
+
+.select {
+  width: 100%;
+  height: 36px;
+  border-radius: 4px;
+  border: 1px solid #bdbdbd;
+  background-color: white;
+  outline: none;
+  cursor: pointer; }
+  .select:hover {
+    background-color: #fafafa; }
+  .select:focus {
+    border-color: #f1c00e; }
+
+.radio {
+  display: block;
+  padding: 4px 4px;
+  border-radius: 4px;
+  cursor: pointer; }
+  .radio:hover {
+    background-color: #eee; }
+
+.button {
+  width: 100%;
+  border: none;
+  color: white;
+  background-color: #f1c00e;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none; }
+
+.button--secondary {
+  background-color: #757575;
+  line-height: 40px; }
+
+.masthead {
+  display: none;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: white;
+  background-color: #f1c00e;
+  padding: 16px; }
+
+.search-panel {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 240px;
+  height: 100%;
+  background-color: white;
+  border-right: 1px solid #e0e0e0;
+  -webkit-overflow-scrolling: touch; }
+
+.search-options {
+  padding: 16px;
+  flex: 2 1 auto;
+  overflow-y: auto; }
+
+.search-option {
+  margin-bottom: 24px; }
+
+.search-option__heading {
+  margin-bottom: 8px;
+  font-weight: 500;
+  text-transform: uppercase; }
+
+.range-group {
+  display: flex;
+  align-items: center; }
+
+.range-group__divider {
+  padding: 0 8px; }
+
+.input--price {
+  text-align: right; }
+
+.search-input-row {
+  display: flex; }
+
+.search-input-row__input {
+  border-right: none;
+  border-radius: 4px 0 0 4px; }
+
+.search-input-row__button {
+  width: 40px;
+  border-radius: 0 4px 4px 0; }
+
+.search-input-row__icon {
+  fill: white; }
+
+.results-panel {
+  margin-left: 240px;
+  padding: 16px; }
+
+.results-list {
+  margin-bottom: 16px; }
+  .results-list::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.result {
+  float: left;
+  width: 240px;
+  height: 280px;
+  margin: 0 16px 16px 0;
+  overflow: hidden;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px; }
+  .result a {
+    text-decoration: none; }
+    .result a:hover {
+      text-decoration: none; }
+
+.result__image {
+  max-width: 10em;
+  margin-right: 16px; }
+
+.result__body {
+  flex: 1; }
+
+.result__title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2em;
+  margin-bottom: -0.05em;
+  color: #212121;
+  text-decoration: none; }
+
+.result__site_title {
+  line-height: 1.2em;
+  margin-bottom: 0.2em;
+  color: #757575;
+  text-decoration: none; }
+
+.result__snippet {
+  overflow: hidden;
+  text-decoration: none;
+  color: #212121; }
+  .result__snippet a {
+    color: #212121; }
+
+.result__highlight {
+  background-color: #f9e69f;
+  border-radius: 4px; }
+
+.result__meta {
+  color: #bdbdbd;
+  line-height: 1.3em; }
+
+.text-result__content {
+  padding: 16px; }
+
+.mobile-search-bar {
+  display: none;
+  align-items: center;
+  height: 60px;
+  padding: 0 16px;
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+  background-color: #f1c00e;
+  border-bottom: 1px solid #e0e0e0;
+  cursor: pointer; }
+
+.mobile-search-bar__icon {
+  fill: white;
+  margin-right: 8px; }
+
+.mobile-search-actions {
+  display: none; }
+
+@media (max-width: 640px) {
+  .hide-on-mobile {
+    display: none !important; }
+  body {
+    background-color: white; }
+    body.search-panel-is-open {
+      overflow: hidden; }
+      body.search-panel-is-open .search-panel {
+        transform: translateY(0);
+        transition: transform 300ms cubic-bezier(0, 0, 0.2, 1); }
+  .button {
+    height: 40px;
+    font-size: 16px; }
+  .radios {
+    display: flex;
+    flex-wrap: wrap; }
+  .radio {
+    height: 42px;
+    margin-right: 8px;
+    padding: 0; }
+    .radio:hover {
+      background-color: transparent; }
+      .radio:hover .radio__label {
+        color: white;
+        background-color: #f1c00e;
+        border-color: #f1c00e; }
+  .radio__input {
+    position: absolute;
+    visibility: hidden; }
+  .radio__label {
+    display: inline-block;
+    padding: 8px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px; }
+  .masthead {
+    height: 120px; }
+  .mobile-search-bar {
+    display: flex; }
+  .search-panel {
+    display: flex;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(120%);
+    transition: transform 300ms cubic-bezier(0.4, 0, 1, 1); }
+  .search-input-row__input {
+    border-right: 1px solid #bdbdbd;
+    border-radius: 4px; }
+  .search-input-row__button {
+    display: none; }
+  .mobile-search-actions {
+    display: block;
+    flex: 0 0 60px; }
+  .mobile-search-actions__submit {
+    display: block;
+    height: 60px;
+    font-size: 22px; }
+  .results-panel {
+    margin-left: 0;
+    padding: 0 16px 16px 16px; }
+  .result {
+    width: 100%;
+    height: auto;
+    border-width: 0 0 1px 0;
+    margin: 0;
+    background-color: transparent; }
+  .result__title {
+    font-size: 17px; }
+  .text-result__content {
+    padding-right: 0;
+    padding-left: 0; } }
