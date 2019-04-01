@@ -3,16 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-connect": "^4.1.0",
-    "gulp-sass": "^2.3.2"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-sass": "^4.0.2"
+  },
   "dependencies": {
     "jquery": "^3.3.1",
     "underscore": "^1.9.1"

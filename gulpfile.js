@@ -27,4 +27,4 @@ gulp.task('watch', function () {
   gulp.watch(['./**/*.html'], ['html']);
 });
 
-gulp.task('default', ['connect', 'watch']);
+gulp.task('default', gulp.series('connect', 'watch'));
