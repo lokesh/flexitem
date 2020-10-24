@@ -1,6 +1,5 @@
 $(function() {
 
-
   // Config
   var itemMinHeight = 60;
 
